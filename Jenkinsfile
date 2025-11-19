@@ -2,11 +2,10 @@ pipeline {
     agent any
 
     stages {
+
         stage('Clone Repo') {
             steps {
-                git branch: 'main',
-                    url: git url: 'git@github.com:sufiyaannn84/Node.file.git', branch: 'main'
-
+                git branch: 'main', url: 'git@github.com:sufiyaannn84/Node.file.git'
             }
         }
 
