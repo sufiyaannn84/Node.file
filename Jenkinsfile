@@ -5,7 +5,8 @@ pipeline {
         stage('Clone Repo') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/sufiyaannn84/Node.file.git'
+                    url: git url: 'git@github.com:sufiyaannn84/Node.file.git', branch: 'main'
+
             }
         }
 
